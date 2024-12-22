@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="bg-center">
+    <h1>Table 2</h1>
+
+    <nav class="navbar">
+      <a href="index.html">Table Navigation</a>
+      <a href="table1.html">Go to Table 1</a>
+      <a href="table2.html">Go to Table 2</a>
+    </nav>
+  </div>
+
+  <table class="w90p">
+    <caption>Table 2</caption>
+
+    <tr>
+      <td class="w40p" colspan="2">1-2</td>
+      <td class="w60p">3 Column width &ndash; 60%</td>
+    </tr>
+
+    <tr>
+      <td class="w28p">4 width 28%</td>
+
+      <td colspan="2" rowspan="2">
+        <!-- Start Nested Table -->
+        <table class="w80p">
+          <caption>Nested table</caption>
+
+          <tr>
+            <td>1</td>
+            <td rowspan="3">2-5-8<br>All columns <br> widht 33%</td>
+            <td rowspan="2" class="h200p">3-6<br>Height 200рх</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2" class="h200p">4-7<br>Height 200рх</td>
+          </tr>
+
+          <tr>
+            <td>9</td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="w28p">7</td>
+    </tr>
+
+  </table>
+
+</body>
+
+</html>
